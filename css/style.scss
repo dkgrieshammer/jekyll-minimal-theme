@@ -17,6 +17,8 @@ html {
 body {
   color:            $body-color;
   background-color: $body-background-color;
+  padding:0;
+  margin:0;
 }
 
 //////////////
@@ -172,7 +174,8 @@ table {
 //   -- centers page content
 
 .container {
-  max-width: 38rem;
+  // max-width: 38rem;
+  max-width: 48rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -186,22 +189,35 @@ table {
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  border-bottom: 1px solid black;
 
- .masthead-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $masthead-color;
-  
-    a {
-      color: $masthead-color;
-    }
-    
+  nav {
+    text-align: right;
+    padding-right: 1rem;
+
     small {
       color: $masthead-small-color;
       font-size: 75%;
       font-weight: 400;
       letter-spacing: 0;
     }
+    a {
+      color: $masthead-color;
+    }
+  }
+
+ .masthead-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $masthead-color;
+    padding-left: 1rem;
+    float: left;
+  
+    a {
+      color: $masthead-color;
+    }
+
+    
   }
 }
 
